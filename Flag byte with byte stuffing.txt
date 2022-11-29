@@ -1,0 +1,17 @@
+#Flag byte with byte stuffing Framing Technique 
+payload = input(" enter payload \n"); 
+#separated based on space 
+frames1=payload.split() 
+Flag="Flag" 
+ff="" 
+ 
+#Checking Flag in Payload 
+print("Frame : \n") 
+for f in frames1: 
+    if(f == "Flag"): 
+        f="ESC "+f 
+    elif(f == "ESC"): 
+        f=f+" ESC" 
+    ff=ff+" "+f 
+#Displays Frame    
+print("|Flag|" +ff+"|Flag|");
