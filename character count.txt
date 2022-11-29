@@ -1,0 +1,16 @@
+#Character Count Framing Technique 
+payload = input(" enter payload \n"); 
+#frames are separated based on space 
+frames1=payload.split() 
+count = 0;   
+ 
+#Counts each character 
+print("Frames : \n") 
+for f in frames1: 
+    for i in range(0, len(f)):   
+        if(f[i] != ' '):   
+            count = count + 1;   
+    
+#Displays Frames    
+    print("|" + str(count+1)+f+"|"); 
+    count=0
