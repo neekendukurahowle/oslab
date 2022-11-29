@@ -1,0 +1,15 @@
+#Parity  
+print("enter payload") 
+pl=input() 
+l=len(pl) 
+i=0 
+c=0 
+while(i<l): 
+    if(int(pl[i])==1): 
+        c=c+1 
+    i=i+1 
+  
+if(c%2==0): 
+    print("even parity") 
+else: 
+    print("odd parity")
